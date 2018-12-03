@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Steven Kay</title>
+    <link href="css/layout.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Rufina" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="faderbar"></div>
+      <div class="text">
+        <p class="title">STAR WARS<br>SCROLL EFFECT<br>by Steven Kay<br></p>
+        <p>This was done using plain CSS.</p>
+        <p>The tilt was done using 3D CSS transform (rotate X by 35 degrees). It uses viewport units so should work at any resolution.</p>
+        <p>Note how the text fades out as it reaches the top. This is done by overlaying a custom gradient from black(0%) to transparent(50%) using a high z-index to place it above the text.</p>
+        <p>The animation uses @keyframe to change the top position in a linear fashion from 35rem to -85rem; the moves the text gradually up the screen, while the camera stays in the same place.<p/>
+        <p>There's also a very subtle glow effect added using text-shadow.</p>
+        <p>Works in FF, Chrome and Safari (but Safari is painfully slow)</p>
+      </div>
+    </div>
+  </body>
+</html>
