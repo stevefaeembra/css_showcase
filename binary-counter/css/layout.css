@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+}
+
+hr {
+  padding: 1rem 0;
+  border: 0;
+}
+
+.container {
+  width: 50%;
+  height: 10rem;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 1rem;
+}
+
+.fullspan {
+  grid-column: span 8;
+}
+
+.b0, .b1, .b2, .b3, .b4, .b5, .b6, .b7 {
+  border: 2px solid black;
+  border-radius: 2rem;
+  height: 1rem;
+  padding: 1rem;
+  text-align: center;
+  vertical-align: center;
+}
+
+@keyframes toggle {
+  0% {
+    background-color: black;
+    color: white;
+    -webkit-box-shadow: 6px 7px 29px 8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 29px 8px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 7px 29px 8px rgba(0, 0, 0, 0.75);
+  }
+  49% {
+    background-color: black;
+    color: white;
+    -webkit-box-shadow: 6px 7px 29px 8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 29px 8px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 7px 29px 8px rgba(0, 0, 0, 0.75);
+  }
+  50% {
+    background-color: white;
+    color: black;
+    -webkit-box-shadow: 6px 7px 29px 8px aqua;
+    -moz-box-shadow: 6px 7px 29px 8px aqua;
+    box-shadow: 0px 0px 12px 8px aqua;
+  }
+  99% {
+    background-color: white;
+    color: black;
+    -webkit-box-shadow: 6px 7px 29px 8px aqua;
+    -moz-box-shadow: 6px 7px 29px 8px aqua;
+    box-shadow: 0px 0px 12px 8px aqua;
+  }
+}
+.b0 {
+  animation: toggle;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.b1 {
+  animation: toggle;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.b2 {
+  animation: toggle;
+  animation-timing-function: linear;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.b3 {
+  animation: toggle;
+  animation-timing-function: linear;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+}
+
+.b4 {
+  animation: toggle;
+  animation-timing-function: linear;
+  animation-duration: 32s;
+  animation-iteration-count: infinite;
+}
+
+.b5 {
+  animation: toggle;
+  animation-timing-function: linear;
+  animation-duration: 64s;
+  animation-iteration-count: infinite;
+}
+
+.b6 {
+  animation: toggle;
+  animation-timing-function: linear;
+  animation-duration: 128s;
+  animation-iteration-count: infinite;
+}
+
+.b7 {
+  animation: toggle;
+  animation-timing-function: linear;
+  animation-duration: 256s;
+  animation-iteration-count: infinite;
+}
+
+/*# sourceMappingURL=layout.css.map */
