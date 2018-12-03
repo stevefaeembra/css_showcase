@@ -1,0 +1,42 @@
+body {
+  height:100vh;
+  background-color: white;
+  position:relative;
+}
+
+.one {
+  position:absolute;
+  width:100vw;
+  height:100vh;
+  animation: move2;
+  transform-origin: 50vw 50vh;
+  animation-duration: 10000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 100ms;
+  background-image: repeating-radial-gradient( red 0px, rgba(0,0,0,0) 20px);
+}
+
+
+@keyframes move2 {
+  from {
+    transform: rotate(0deg) scale(2.0);
+  }
+  to {
+    transform: rotate(1turn) scale(2.0);
+  }
+}
+
+.two {
+  position:absolute;
+  width:100vw;
+  height:100vh;
+  animation: move2;
+  transform-origin: 50vw 50vh;
+  animation-duration: 10000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  background-image: repeating-radial-gradient(cyan 0px, rgba(0,0,0,0) 10px);
+}
